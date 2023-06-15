@@ -42,11 +42,13 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 70%;
+  gap: 3px;
 
 }
 
 ul li img {
-  width: 80%;
+  width: 100%;
   height: 90%;
   object-fit: cover;
 }
@@ -54,6 +56,13 @@ ul li img {
 li {
   list-style: none;
 }
+
+section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 section:nth-child(2) div {
   display: none;
@@ -67,10 +76,39 @@ section:nth-child(2) div {
 
 
   ul {
-    width: 30%;
+    width: 20%;
     flex-direction: column;
     height: 40vh;
-    width: 50%;
+  }
+
+  li {
+    width: 100%;
+    height: 100%;
+  }
+
+  ul li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  section:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    gap: 80px;
+    width: 80%;
+  }
+
+  section:nth-child(2) p {
+    display: flex;
+    align-self: center;
+
+  }
+
+  section:nth-child(2) small {
+    display: flex;
+    align-self: flex-end;
+
   }
 
 
@@ -78,5 +116,8 @@ section:nth-child(2) div {
     width: 70%;
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    gap: 30px;
   }
+
 }
